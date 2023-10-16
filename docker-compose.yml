@@ -1,0 +1,21 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: same_postgres_name
+    environment:
+      POSTGRES_USER: same_user
+      POSTGRES_PASSWORD: same_password
+      POSTGRES_DB: same_base_db
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+#  myapp:
+#    # Здесь описывайте сервис вашего приложения
+#    # ...
+
+volumes:
+  postgres_data:
