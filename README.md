@@ -1,29 +1,25 @@
-git clone https://github.com/zhdaniukivan/simple_fastapi_server_and_postgresql.git
-перейдите в католог с файлом docker-compose.yml
-Устанавите необходимое програмное окружение командой
-pip install -r requirements.txt
-запустите сервер postgresql  в докер контенере
-docker-compose up -d
-запустите сервер fastapi:
-uvicorn server_app.main:app --reload
-
-откройте программу postman или insomnia и отправть POST запрос c телом json:
-
-{
-    "questions_num":50
-}
-
 Сначала клонируйте репозиторий из GitHub:
+
 git clone https://github.com/zhdaniukivan/simple_fastapi_server_and_postgresql.git
+
 Затем перейдите в каталог с файлом docker-compose.yml:
+
 cd simple_fastapi_server_and_postgresql
+
 Установите необходимые зависимости с помощью pip:
+
 pip install -r requirements.txt
+
 Запустите сервер PostgreSQL в Docker-контейнере:
+
 docker-compose up -d
+
 Наконец, запустите сервер FastAPI:
+
 uvicorn server_app.main:app --reload
+
 Откройте программу Postman или Insomnia и отправьте POST-запрос с телом JSON:
+
 {
     "questions_num": 50
 }
