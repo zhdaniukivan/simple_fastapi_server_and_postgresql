@@ -4,8 +4,6 @@ git clone https://github.com/zhdaniukivan/simple_fastapi_server_and_postgresql.g
 
 Затем перейдите в каталог с файлом docker-compose.yml:
 
-cd simple_fastapi_server_and_postgresql
-
 Установите необходимые зависимости с помощью pip:
 
 pip install -r requirements.txt
